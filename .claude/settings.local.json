@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(npm cache:*)",
+      "Bash(npm ls:*)",
+      "Bash(find ~/.npm/_cacache -name *.tgz -path */next-*)",
+      "Bash(find ~/.npm -name package.json -path */next/*)",
+      "Bash(npm --version)",
+      "Bash(npx --version)",
+      "Bash(find ~/.npm -name *.json -path *next*)",
+      "Bash(find /Users/eloelo -name next -path */node_modules/.bin/next)",
+      "Bash(node -e \":*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git rm:*)",
+      "Bash(git reset:*)"
+    ]
+  }
+}

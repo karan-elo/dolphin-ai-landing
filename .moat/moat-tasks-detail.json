@@ -1,0 +1,47 @@
+[
+  {
+    "id": "84bc3e1d-0314-4860-b658-c3fb770f5574",
+    "title": "Container",
+    "comment": "the buttons are bigger than design, recheck & make them smaller, also tap padding needs to increase a bit",
+    "selector": "header.fixed.top-0 > div.items-center.justify-between",
+    "boundingRect": {
+      "x": 36,
+      "y": 0,
+      "w": 1440,
+      "h": 80
+    },
+    "screenshotPath": "./screenshots/moat-1773658333305-6yde7c33x.png",
+    "status": "done",
+    "timestamp": 1773658333326
+  },
+  {
+    "id": "9cc84f1d-f178-45b0-9e3d-30eb08463bc4",
+    "title": "Colored Container",
+    "comment": "the design of this entire section is different from figma, please check",
+    "selector": "#main-content > section.relative.py-8:nth-child(4)",
+    "boundingRect": {
+      "x": 0,
+      "y": 103,
+      "w": 1512,
+      "h": 481
+    },
+    "screenshotPath": "./screenshots/moat-1773658396280-yo2m660xi.png",
+    "status": "done",
+    "timestamp": 1773658396308
+  },
+  {
+    "id": "4360dfab-63fe-4d3f-b5a1-9d39ce5b3ae0",
+    "title": "Colored Container",
+    "comment": "the social icons in this page will have a floating feeling, like moving wiggle very slowly, also facebook icon is missing",
+    "selector": "#main-content > section.relative.min-h-[484px]:nth-child(5)",
+    "boundingRect": {
+      "x": 0,
+      "y": 126,
+      "w": 1512,
+      "h": 484
+    },
+    "screenshotPath": "./screenshots/moat-1773658430709-8pmrz1lfw.png",
+    "status": "done",
+    "timestamp": 1773658430744
+  }
+]

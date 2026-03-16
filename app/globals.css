@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+/* ── Social icon floating wiggle animation ─────────────────────────── */
+@keyframes float-wiggle {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-10px) rotate(3deg);
+  }
+  75% {
+    transform: translateY(6px) rotate(-2deg);
+  }
+}
+
+.social-float {
+  animation: float-wiggle linear infinite;
+}
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;1,9..40,600&family=Roboto:wght@400&display=swap");
+
+@layer theme {
+  :root {
+    /* Colors */
+    --color-bg-dark: #171717;
+    --color-bg-float: #1c1d1d;
+    --color-text-primary: #fafafa;
+    --color-text-secondary: #cdcdcd;
+    --color-text-disabled: #737373;
+    --color-accent-cyan: #2dcdff;
+    --color-accent-pink: #ff006e;
+    --color-accent-purple: #b107e0;
+    --color-accent-green: #157145;
+    --color-accent-green-light: #9ee493;
+    --color-btn-primary: #2b61ff;
+    --color-btn-disabled: #28292c;
+    --color-grey-700: #3c3d40;
+    --color-grey-800: #28292c;
+    --color-footer-bg: #0c9ac6;
+
+    /* Fonts */
+    --font-title: "Space Grotesk", sans-serif;
+    --font-body: "DM Sans", sans-serif;
+    --font-footer: "Roboto", sans-serif;
+  }
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-bg-dark);
+    color: var(--color-text-primary);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Reduced motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar — Chrome, Safari, Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar — IE, Edge, Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Font families */
+  .font-title {
+    font-family: var(--font-title);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .font-footer {
+    font-family: var(--font-footer);
+  }
+
+  /* Visually hidden — accessible but not visible */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+}
