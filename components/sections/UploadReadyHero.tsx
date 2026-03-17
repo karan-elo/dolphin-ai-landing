@@ -10,33 +10,33 @@ export default function UploadReadyHero() {
     >
       {/* Floating social platform icons — decorative, aria-hidden */}
 
-      {/* X / Twitter — left side */}
+      {/* X / Twitter — left side lower */}
       <img
         src={UPLOAD_HERO_ASSETS.xIcon}
         alt=""
         aria-hidden="true"
         className="absolute w-[48px] h-[48px] object-contain pointer-events-none social-float"
-        style={{ left: 242, top: 360, animationDuration: "4s", animationDelay: "0s" }}
+        style={{ left: "16%", top: 300, animationDuration: "4s", animationDelay: "0s" }}
         loading="lazy"
       />
 
-      {/* YouTube — top right */}
+      {/* YouTube — right upper */}
       <img
         src={UPLOAD_HERO_ASSETS.ytIcon}
         alt=""
         aria-hidden="true"
         className="absolute w-[40px] h-[40px] object-contain pointer-events-none social-float"
-        style={{ right: 288, top: 100, animationDuration: "3.5s", animationDelay: "0.6s" }}
+        style={{ right: "20%", top: 80, animationDuration: "3.5s", animationDelay: "0.6s" }}
         loading="lazy"
       />
 
-      {/* LinkedIn — right middle-upper */}
+      {/* LinkedIn — right middle */}
       <img
         src={UPLOAD_HERO_ASSETS.liIcon}
         alt=""
         aria-hidden="true"
         className="absolute w-[48px] h-[48px] object-contain pointer-events-none social-float"
-        style={{ right: 240, top: 207, animationDuration: "5s", animationDelay: "1.2s" }}
+        style={{ right: "16%", top: 200, animationDuration: "5s", animationDelay: "1.2s" }}
         loading="lazy"
       />
 
@@ -46,17 +46,25 @@ export default function UploadReadyHero() {
         alt=""
         aria-hidden="true"
         className="absolute w-[48px] h-[48px] object-contain pointer-events-none social-float"
-        style={{ right: 192, top: 370, animationDuration: "4.5s", animationDelay: "0.3s" }}
+        style={{ right: "13%", top: 340, animationDuration: "4.5s", animationDelay: "0.3s" }}
         loading="lazy"
       />
 
-      {/* Facebook — added, left-upper area */}
+      {/* Facebook — solid blue circle with white icon to avoid transparent-f issue */}
       <span
         aria-hidden="true"
-        className="absolute pointer-events-none social-float"
-        style={{ left: 180, top: 100, animationDuration: "3.8s", animationDelay: "1.8s" }}
+        className="absolute pointer-events-none social-float flex items-center justify-center rounded-full"
+        style={{
+          left: "13%",
+          top: 80,
+          width: 48,
+          height: 48,
+          backgroundColor: "#1877F2",
+          animationDuration: "3.8s",
+          animationDelay: "1.8s",
+        }}
       >
-        <FaFacebook size={44} color="#1877F2" />
+        <FaFacebook size={28} color="white" />
       </span>
 
       {/* Main heading block */}
@@ -81,16 +89,17 @@ export default function UploadReadyHero() {
           </p>
 
           {/* "INSTANTLY" on cyan highlight block */}
-          <div className="relative inline-block">
+          <div className="relative inline-block px-[18px]">
             <img
               src={UPLOAD_HERO_ASSETS.instantlyBg}
               alt=""
               aria-hidden="true"
-              className="absolute inset-0 w-full h-full object-fill pointer-events-none"
+              className="absolute inset-x-0 top-[6px] bottom-[5px] w-full object-fill pointer-events-none"
+              style={{ height: "calc(100% - 11px)" }}
               loading="lazy"
             />
             <p
-              className="relative text-[#fafafa] font-bold uppercase leading-normal whitespace-nowrap px-4"
+              className="relative text-[#fafafa] font-bold uppercase leading-normal whitespace-nowrap"
               style={{ fontFamily: "var(--font-title)", fontSize: "80px" }}
               aria-hidden="true"
             >

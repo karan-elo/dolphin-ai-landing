@@ -5,9 +5,15 @@ import VideoBox from "@/components/ui/VideoBox";
 import type { CarouselItem } from "@/lib/config";
 import { DEEPLINK_URL } from "@/lib/config";
 
+interface CarouselHeader {
+  title: string;
+  subtitle?: string;
+}
+
 interface VideoCarouselProps {
   sectionLabel: string;
   items: CarouselItem[];
+  header?: CarouselHeader;
 }
 
 const BADGE_COLORS: Record<"green" | "purple", string> = {
@@ -15,7 +21,7 @@ const BADGE_COLORS: Record<"green" | "purple", string> = {
   purple: "#b107e0",
 };
 
-export default function VideoCarousel({ sectionLabel, items }: VideoCarouselProps) {
+export default function VideoCarousel({ sectionLabel, items, header }: VideoCarouselProps) {
   const scrollRef = useRef<HTMLUListElement>(null);
   const isDragging = useRef(false);
   const startX = useRef(0);
@@ -73,16 +79,40 @@ export default function VideoCarousel({ sectionLabel, items }: VideoCarouselProp
       className="relative w-full overflow-hidden py-12"
       style={{ backgroundColor: "#171717" }}
     >
-      {/* Visually hidden section heading */}
-      <h2 className="sr-only">{sectionLabel}</h2>
+      {/* Optional visible section header (e.g. Carousel 2) */}
+      {header ? (
+        <div className="w-full px-6">
+          <div className="max-w-[1440px] mx-auto mb-6 flex items-start">
+            <div className="flex flex-col gap-1">
+              <h2
+                className="text-[20px] font-bold leading-[28px] text-white whitespace-nowrap"
+                style={{ fontFamily: "var(--font-title)" }}
+              >
+                {header.title}
+              </h2>
+              {header.subtitle && (
+                <p
+                  className="text-[16px] font-normal leading-[20px]"
+                  style={{ fontFamily: "var(--font-body)", color: "#cdcdcd" }}
+                >
+                  {header.subtitle}
+                </p>
+              )}
+            </div>
+          </div>
+        </div>
+      ) : (
+        /* Visually hidden section heading for screen readers */
+        <h2 className="sr-only">{sectionLabel}</h2>
+      )}
 
       {/* Scrollable card list */}
       <ul
         ref={scrollRef}
         role="list"
         aria-label={`${sectionLabel} videos`}
-        className="flex gap-4 overflow-x-auto no-scrollbar px-6 select-none"
-        style={{ cursor: "grab" }}
+        className="flex gap-4 overflow-x-auto no-scrollbar pr-6 select-none"
+        style={{ paddingLeft: "calc(24px + max(0px, (100vw - 1488px) / 2))", cursor: "grab" }}
         onMouseDown={onMouseDown}
         onMouseLeave={onMouseLeave}
         onMouseUp={onMouseUp}

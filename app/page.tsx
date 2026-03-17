@@ -33,10 +33,14 @@ export default function Home() {
       {/* 6. 4×2 video grid */}
       <VideoGrid />
 
-      {/* 7. Feature carousel #2 */}
+      {/* 7. Feature carousel #2 — with visible header from Figma */}
       <VideoCarousel
         sectionLabel="Dolphin AI features — Carousel 2"
         items={CAROUSEL_2_ITEMS}
+        header={{
+          title: "LATEST FEATURES - TRY NOW",
+          subtitle: "New capabilities by Dolphin",
+        }}
       />
 
       {/* 8. Made Possible With Dolphin AI — 4 column grid */}

@@ -17,7 +17,7 @@ export default function MadePossibleSection() {
           <div className="flex flex-col gap-1">
             <h2
               id="made-possible-heading"
-              className="text-[20px] font-bold leading-[28px] text-white"
+              className="text-[24px] font-bold leading-[32px] text-white"
               style={{ fontFamily: "var(--font-title)" }}
             >
               MADE POSSIBLE WITH DOLPHIN AI
@@ -32,13 +32,13 @@ export default function MadePossibleSection() {
 
           <a
             href={DEEPLINK_URL}
-            className="flex items-center gap-2 text-[#fafafa] text-[20px] font-semibold leading-[24px] hover:text-[#2dcdff] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#2dcdff] focus-visible:rounded-sm"
+            className="flex items-center gap-2 px-4 py-4 border border-[#737373] rounded-[12px] text-[#fafafa] text-[20px] font-semibold leading-[24px] hover:border-[#fafafa] transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#2dcdff]"
             style={{ fontFamily: "var(--font-body)" }}
             aria-label="See all Dolphin AI created videos"
           >
             See all
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M9 18l6-6-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="-rotate-90">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </a>
         </div>

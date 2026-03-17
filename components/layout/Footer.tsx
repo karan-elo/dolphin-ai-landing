@@ -16,8 +16,8 @@ const SOCIAL_LINKS = [
 
 export default function Footer() {
   return (
-    <footer style={{ backgroundColor: "#0c9ac6" }}>
-      <div className="max-w-[1440px] mx-auto px-[80px] py-[48px] flex flex-col gap-12">
+    <footer className="px-6" style={{ backgroundColor: "#0c9ac6" }}>
+      <div className="max-w-[1440px] mx-auto py-[48px] flex flex-col gap-12">
 
         {/* Top row — Logo + Social Icons */}
         <div className="flex items-center justify-between">

@@ -43,5 +43,395 @@
     "screenshotPath": "./screenshots/moat-1773658430709-8pmrz1lfw.png",
     "status": "done",
     "timestamp": 1773658430744
+  },
+  {
+    "id": "b58cf3e0-6e71-4d32-a8c0-00459cafa7aa",
+    "title": "Colored Container",
+    "comment": "height does not match figma design",
+    "selector": "section.relative.min-h-[769px]:nth-child(1) > div.absolute.bottom-[24px]:nth-child(5) > div.relative.rounded-[16px]",
+    "boundingRect": {
+      "x": 404,
+      "y": 343,
+      "w": 704,
+      "h": 124
+    },
+    "screenshotPath": "./screenshots/moat-1773666582443-zj27zfcnc.png",
+    "status": "done",
+    "timestamp": 1773666582466
+  },
+  {
+    "id": "17ad9db2-9b24-4bdf-aba2-7750eb1e1cce",
+    "title": "List",
+    "comment": "section is not spaced out in centre like design",
+    "selector": "ol[aria-label=\"Three steps to create a video\"]",
+    "boundingRect": {
+      "x": 36,
+      "y": 235,
+      "w": 1440,
+      "h": 394
+    },
+    "screenshotPath": "./screenshots/moat-1773666617958-bkzalpm74.png",
+    "status": "done",
+    "timestamp": 1773666617999
+  },
+  {
+    "id": "dd32becb-2a30-4c93-a6f3-1b2efc72f368",
+    "title": "Colored Container",
+    "comment": "not every section has new tag, only nano banana section",
+    "selector": "#main-content > section.relative.overflow-hidden:nth-child(4)",
+    "boundingRect": {
+      "x": 0,
+      "y": 660,
+      "w": 1512,
+      "h": 488
+    },
+    "screenshotPath": "./screenshots/moat-1773666640613-81ckoptl8.png",
+    "status": "done",
+    "timestamp": 1773666640643
+  },
+  {
+    "id": "209235a6-e09c-4214-8e1a-c722d83e3a3c",
+    "title": "Colored Container",
+    "comment": "facebook logo is transparent ,should have white fill for f",
+    "selector": "#main-content > section.relative.min-h-[484px]:nth-child(5)",
+    "boundingRect": {
+      "x": 0,
+      "y": 45,
+      "w": 1512,
+      "h": 484
+    },
+    "screenshotPath": "./screenshots/moat-1773666688895-rdz6hvx7r.png",
+    "status": "done",
+    "timestamp": 1773666688926
+  },
+  {
+    "id": "706d997b-9489-4a0b-a12b-e5849395332f",
+    "title": "Link: See all",
+    "comment": "cta does not match design, fix",
+    "selector": "a[aria-label=\"See all videos\"]",
+    "boundingRect": {
+      "x": 1381,
+      "y": 273,
+      "w": 95,
+      "h": 24
+    },
+    "screenshotPath": "./screenshots/moat-1773666705646-3onoxeub8.png",
+    "status": "done",
+    "timestamp": 1773666705671
+  },
+  {
+    "id": "857d8fdc-1032-4fb3-8e40-14dff43172f2",
+    "title": "Container: Dolphin AI features — Carousel 2",
+    "comment": "there is a header in figma which i added for this section add that",
+    "selector": "section[aria-label=\"Dolphin AI features — Carousel 2\"]",
+    "boundingRect": {
+      "x": 0,
+      "y": 217,
+      "w": 1512,
+      "h": 490
+    },
+    "screenshotPath": "./screenshots/moat-1773666984489-8ktmqrygs.png",
+    "status": "done",
+    "timestamp": 1773666984521
+  },
+  {
+    "id": "5df1e127-4249-4b68-9e98-cfd84abb5494",
+    "title": "h2: MADE POSSIBLE WITH DOLPHIN AI",
+    "comment": "text styling missing, check figma",
+    "selector": "#made-possible-heading",
+    "boundingRect": {
+      "x": 36,
+      "y": 138,
+      "w": 313,
+      "h": 28
+    },
+    "screenshotPath": "./screenshots/moat-1773666997815-gm4y2gze8.png",
+    "status": "done",
+    "timestamp": 1773666997839
+  },
+  {
+    "id": "71ffc1f3-5851-4187-976d-5ecade3d53a0",
+    "title": "Link: See all",
+    "comment": "cta mismatch from figma",
+    "selector": "a[aria-label=\"See all Dolphin AI created videos\"]",
+    "boundingRect": {
+      "x": 1381,
+      "y": 152,
+      "w": 95,
+      "h": 24
+    },
+    "screenshotPath": "./screenshots/moat-1773667006236-rp1yzs53t.png",
+    "status": "done",
+    "timestamp": 1773667006251
+  },
+  {
+    "id": "d0880ba3-ab66-4e9c-bd2b-198002f97343",
+    "title": "List",
+    "comment": "this section is still not centre aligned like design & should be end to end",
+    "selector": "ol[aria-label=\"Three steps to create a video\"]",
+    "boundingRect": {
+      "x": 36,
+      "y": 193,
+      "w": 1440,
+      "h": 394
+    },
+    "screenshotPath": "./screenshots/moat-1773668214025-0qs5zyen8.png",
+    "status": "done",
+    "timestamp": 1773668214067
+  },
+  {
+    "id": "112b5684-d18c-4508-b42a-64dc57166368",
+    "title": "Container",
+    "comment": "title has some side padding, it should be left aligned fully",
+    "selector": "#main-content > section.relative.overflow-hidden:nth-child(4) > div.items-center.justify-between",
+    "boundingRect": {
+      "x": 36,
+      "y": 183,
+      "w": 1440,
+      "h": 58
+    },
+    "screenshotPath": "./screenshots/moat-1773668241783-brv4mdhlk.png",
+    "status": "done",
+    "timestamp": 1773668241813
+  },
+  {
+    "id": "bab3b88c-47a3-4d39-83fb-70e0f4bcca6d",
+    "title": "Colored Container",
+    "comment": "social icon plaement is bit off compared to figma",
+    "selector": "#main-content > section.relative.min-h-[484px]:nth-child(5)",
+    "boundingRect": {
+      "x": 0,
+      "y": 104,
+      "w": 1512,
+      "h": 484
+    },
+    "screenshotPath": "./screenshots/moat-1773668260193-25fbrkjy6.png",
+    "status": "done",
+    "timestamp": 1773668260224
+  },
+  {
+    "id": "19468149-e1f8-4ff5-9b1e-4f2e34ea9e0d",
+    "title": "p: Instantly",
+    "comment": "this section also doesn't match design, padding on the internal blue border is bit off",
+    "selector": "div.items-center.gap-3 > div.relative > p.relative.text-[#fafafa]",
+    "boundingRect": {
+      "x": 682,
+      "y": 323,
+      "w": 431,
+      "h": 120
+    },
+    "screenshotPath": "./screenshots/moat-1773668282533-e3ez4dfnk.png",
+    "status": "done",
+    "timestamp": 1773668282557
+  },
+  {
+    "id": "dc5d5e5c-a5eb-42ae-8c90-a2684abcf9ea",
+    "title": "h2: UP TO 90 SEC VIDEOS",
+    "comment": "90 sec - text color should match figma",
+    "selector": "#video-grid-heading",
+    "boundingRect": {
+      "x": 36,
+      "y": 235,
+      "w": 342,
+      "h": 28
+    },
+    "screenshotPath": "./screenshots/moat-1773668297495-y4f1u6b06.png",
+    "status": "done",
+    "timestamp": 1773668297515
+  },
+  {
+    "id": "038a505a-c4d6-4ecd-a3ef-1851d90e3ba7",
+    "title": "Container",
+    "comment": "text shouold be fully left aligned like design",
+    "selector": "#main-content > section.relative.overflow-hidden:nth-child(7) > div.items-start.px-6",
+    "boundingRect": {
+      "x": 36,
+      "y": 137,
+      "w": 1440,
+      "h": 52
+    },
+    "screenshotPath": "./screenshots/moat-1773668316106-2t729cuz0.png",
+    "status": "done",
+    "timestamp": 1773668316136
+  },
+  {
+    "id": "d94d6312-2d39-4444-b73c-8cf4e3b1298b",
+    "title": "List",
+    "comment": "the card left / padding alighment doesn not match page",
+    "selector": "ul[aria-label=\"Dolphin AI features — Carousel 2 videos\"]",
+    "boundingRect": {
+      "x": 0,
+      "y": 200,
+      "w": 1512,
+      "h": 394
+    },
+    "screenshotPath": "./screenshots/moat-1773668338450-oxfuokcfg.png",
+    "status": "done",
+    "timestamp": 1773668338481
+  },
+  {
+    "id": "af60f99d-d28c-4404-b922-29d559b9c937",
+    "title": "Colored Container",
+    "comment": "this entire section side padding is off from rest of page",
+    "selector": "#main-content > section.py-8:nth-child(3)",
+    "boundingRect": {
+      "x": 0,
+      "y": 165,
+      "w": 1512,
+      "h": 546
+    },
+    "screenshotPath": "./screenshots/moat-1773668706361-v8dma6c5c.png",
+    "status": "done",
+    "timestamp": 1773668706408
+  },
+  {
+    "id": "4195f2dd-81eb-4007-a48c-67af35b5c2dc",
+    "title": "h2: UP TO 90 SEC VIDEOS",
+    "comment": "color is wwrong",
+    "selector": "#video-grid-heading",
+    "boundingRect": {
+      "x": 36,
+      "y": 461,
+      "w": 342,
+      "h": 28
+    },
+    "screenshotPath": "./screenshots/moat-1773668726687-w179y8ml3.png",
+    "status": "done",
+    "timestamp": 1773668726710
+  },
+  {
+    "id": "0853fa21-9738-4c6a-9a2f-c2ad5486e1f6",
+    "title": "Container: Dolphin AI features — Carousel 2",
+    "comment": "entire section padding is off from rest of page",
+    "selector": "section[aria-label=\"Dolphin AI features — Carousel 2\"]",
+    "boundingRect": {
+      "x": 0,
+      "y": 266,
+      "w": 1512,
+      "h": 566
+    },
+    "screenshotPath": "./screenshots/moat-1773668746862-5y4yzic33.png",
+    "status": "done",
+    "timestamp": 1773668746896
+  },
+  {
+    "id": "15438d0e-6c00-4f39-bf5d-d2d33e14ebce",
+    "title": "p: Instantly",
+    "comment": "the padding of blue border does not match design",
+    "selector": "div.items-center.gap-3 > div.relative > p.relative.text-[#fafafa]",
+    "boundingRect": {
+      "x": 698,
+      "y": 344,
+      "w": 399,
+      "h": 120
+    },
+    "screenshotPath": "./screenshots/moat-1773729907183-1srfohnai.png",
+    "status": "done",
+    "timestamp": 1773729907201
+  },
+  {
+    "id": "289aaa0e-fbcf-4d41-a667-143557dfba96",
+    "title": "Container: Dolphin AI features — Carousel 2",
+    "comment": "the padding of cards does not match header",
+    "selector": "section[aria-label=\"Dolphin AI features — Carousel 2\"]",
+    "boundingRect": {
+      "x": 0,
+      "y": 115,
+      "w": 1512,
+      "h": 566
+    },
+    "screenshotPath": "./screenshots/moat-1773729932789-fk1ghlzkj.png",
+    "status": "done",
+    "timestamp": 1773729932815
+  },
+  {
+    "id": "1f6125aa-bc0c-4842-a52c-b96bece4f061",
+    "title": "Container",
+    "comment": "the padding of footer text compennets does nto manage rest of page",
+    "selector": "footer > div.max-w-[1440px].mx-auto",
+    "boundingRect": {
+      "x": 36,
+      "y": 601,
+      "w": 1440,
+      "h": 261
+    },
+    "screenshotPath": "./screenshots/moat-1773730028000-cd13fp5dv.png",
+    "status": "done",
+    "timestamp": 1773730028020
+  },
+  {
+    "id": "3077f97c-6710-4670-9a2a-02135d2d1922",
+    "title": "Colored Container",
+    "comment": "this compenent design does not match figma",
+    "selector": "div.relative.overflow-hidden:nth-child(1) > div.relative.overflow-hidden:nth-child(1) > div.absolute.bottom-4:nth-child(3)",
+    "boundingRect": {
+      "x": 572,
+      "y": 497,
+      "w": 368,
+      "h": 48
+    },
+    "screenshotPath": "./screenshots/moat-1773730063510-4nfpw84tc.png",
+    "status": "done",
+    "timestamp": 1773730063542
+  },
+  {
+    "id": "d9a88f76-495b-4d60-ba65-eb889815ef87",
+    "title": "Container: Dolphin AI features — Carousel 1",
+    "comment": "use same 24 px padding as 90 sec section on left",
+    "selector": "section[aria-label=\"Dolphin AI features — Carousel 1\"]",
+    "boundingRect": {
+      "x": 0,
+      "y": 286,
+      "w": 1512,
+      "h": 490
+    },
+    "screenshotPath": "./screenshots/moat-1773730689516-3iwvz638d.png",
+    "status": "done",
+    "timestamp": 1773730689540
+  },
+  {
+    "id": "ac50c096-987e-4d52-a1cc-b388c7b79d85",
+    "title": "Colored Container",
+    "comment": "use same padding as 90 second section",
+    "selector": "#main-content > section.relative.overflow-hidden:nth-child(4)",
+    "boundingRect": {
+      "x": 0,
+      "y": 1222,
+      "w": 1512,
+      "h": 488
+    },
+    "screenshotPath": "./screenshots/moat-1773730712878-mjf5il8kf.png",
+    "status": "done",
+    "timestamp": 1773730712914
+  },
+  {
+    "id": "c033b25e-586e-4ec5-9501-027096c8487b",
+    "title": "List",
+    "comment": "make the continers a bit bigger to reduce gap in between them, don't tamper side paddings",
+    "selector": "ol[aria-label=\"Three steps to create a video\"]",
+    "boundingRect": {
+      "x": 36,
+      "y": 239,
+      "w": 1440,
+      "h": 394
+    },
+    "screenshotPath": "./screenshots/moat-1773730936152-qtvzcqfpb.png",
+    "status": "done",
+    "timestamp": 1773730936200
+  },
+  {
+    "id": "ebb09f98-1d7b-4a51-a153-919e810bb75a",
+    "title": "Colored Container",
+    "comment": "this container still does not match figma design",
+    "selector": "div.relative.overflow-hidden:nth-child(1) > div.relative.overflow-hidden:nth-child(1) > div.absolute.bottom-2:nth-child(3)",
+    "boundingRect": {
+      "x": 572,
+      "y": 450,
+      "w": 368,
+      "h": 48
+    },
+    "screenshotPath": "./screenshots/moat-1773730971617-uyts981fd.png",
+    "status": "done",
+    "timestamp": 1773730971648
   }
 ]

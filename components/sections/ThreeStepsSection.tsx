@@ -49,11 +49,11 @@ export default function ThreeStepsSection() {
 
         {/* Steps cards */}
         <ol
-          className="flex gap-6 items-start"
+          className="flex gap-12 items-start"
           aria-label="Three steps to create a video"
         >
           {/* ── Step 1: Select a Template ── */}
-          <li className="flex flex-col gap-4 shrink-0 w-[432px]">
+          <li className="flex flex-col gap-4 shrink-0 w-[448px]">
             <div
               className="relative h-[322px] w-full overflow-hidden rounded-[16px] border"
               style={{ backgroundColor: "rgba(0,0,0,0.2)", borderColor: "#28292c" }}
@@ -107,13 +107,13 @@ export default function ThreeStepsSection() {
           </li>
 
           {/* ── Step 2: Character & Script ── */}
-          <li className="flex flex-col gap-4 shrink-0 w-[432px]">
+          <li className="flex flex-col gap-4 shrink-0 w-[448px]">
             <div
               className="relative overflow-hidden rounded-[16px] p-6"
               style={{ backgroundColor: "rgba(0,0,0,0.2)" }}
             >
               {/* Character image */}
-              <div className="relative h-[274px] w-[384px] overflow-hidden rounded-lg" style={{ backgroundColor: "#171717" }}>
+              <div className="relative h-[274px] w-[400px] overflow-hidden rounded-lg" style={{ backgroundColor: "#171717" }}>
                 <img
                   src={THREE_STEPS_IMAGES.card2}
                   alt="AI character for video generation"
@@ -130,7 +130,7 @@ export default function ThreeStepsSection() {
                 />
                 {/* Caption overlay */}
                 <div
-                  className="absolute bottom-4 left-1/2 -translate-x-1/2 w-[368px] rounded-lg p-4"
+                  className="absolute bottom-2 left-1/2 -translate-x-1/2 w-[368px] rounded-[8px] p-4 overflow-hidden flex items-start"
                   style={{ backgroundColor: "rgba(0,0,0,0.1)" }}
                 >
                   <p
@@ -175,7 +175,7 @@ export default function ThreeStepsSection() {
           </li>
 
           {/* ── Step 3: Video Generated ── */}
-          <li className="flex flex-col gap-4 shrink-0 w-[432px]">
+          <li className="flex flex-col gap-4 shrink-0 w-[448px]">
             <div
               className="relative overflow-hidden rounded-[16px] p-6"
               style={{ backgroundColor: "rgba(0,0,0,0.2)" }}
@@ -183,7 +183,7 @@ export default function ThreeStepsSection() {
               <VideoBox
                 src={VIDEOS.threeSteps.card3}
                 aria-label="Generated video result preview"
-                className="w-[384px] h-[274px]"
+                className="w-[400px] h-[274px]"
                 rounded="rounded-lg"
               />
 

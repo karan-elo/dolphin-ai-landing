@@ -22,3 +22,9 @@ Thumbs.db
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Moat task system
+.moat/
+
+# Claude Code configuration
+.claude/

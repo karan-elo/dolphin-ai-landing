@@ -51,7 +51,8 @@ export default function AIModelsCarousel() {
       style={{ backgroundColor: "#171717" }}
     >
       {/* Section header */}
-      <div className="flex items-center justify-between px-6 mb-6 max-w-[1440px] mx-auto">
+      <div className="w-full px-6 mb-6">
+        <div className="max-w-[1440px] mx-auto flex items-center justify-between">
         <h2
           id="ai-models-heading"
           className="text-[24px] font-bold leading-[32px] text-white"
@@ -72,6 +73,7 @@ export default function AIModelsCarousel() {
             <path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </a>
+        </div>
       </div>
 
       {/* Scrollable cards */}
@@ -79,8 +81,8 @@ export default function AIModelsCarousel() {
         ref={scrollRef}
         role="list"
         aria-label="Latest AI model video examples"
-        className="flex gap-4 overflow-x-auto no-scrollbar px-6 select-none"
-        style={{ cursor: "grab" }}
+        className="flex gap-4 overflow-x-auto no-scrollbar pr-6 select-none"
+        style={{ paddingLeft: "calc(24px + max(0px, (100vw - 1488px) / 2))", cursor: "grab" }}
         onMouseDown={onMouseDown}
         onMouseLeave={onMouseLeave}
         onMouseUp={onMouseUp}
@@ -121,14 +123,16 @@ export default function AIModelsCarousel() {
                   />
                 )}
 
-                {/* Badge — cyan bg, black italic text per Figma */}
-                <span
-                  className="absolute top-2 left-2 px-2 py-1 rounded-[8px] text-black text-[16px] font-semibold italic leading-[20px] shadow-[0px_2px_6px_0px_rgba(0,0,0,0.25)]"
-                  style={{ backgroundColor: "#2dcdff" }}
-                  aria-label={`Status: ${item.badge}`}
-                >
-                  {item.badge}
-                </span>
+                {/* Badge — only shown when set (Nano Banana 2 only per Figma) */}
+                {item.badge && (
+                  <span
+                    className="absolute top-2 left-2 px-2 py-1 rounded-[8px] text-black text-[16px] font-semibold italic leading-[20px] shadow-[0px_2px_6px_0px_rgba(0,0,0,0.25)]"
+                    style={{ backgroundColor: "#2dcdff" }}
+                    aria-label={`Status: ${item.badge}`}
+                  >
+                    {item.badge}
+                  </span>
+                )}
               </div>
 
               {/* Description — pl-8 py-8 per Figma */}

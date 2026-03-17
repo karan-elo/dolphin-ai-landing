@@ -44,7 +44,7 @@ export default function HeroSection() {
       {/* Centred overlay text card */}
       <div className="absolute bottom-[24px] left-1/2 -translate-x-1/2 w-full max-w-[736px] px-4">
         <div
-          className="relative rounded-[16px] p-4 flex flex-col gap-3"
+          className="relative rounded-[16px] p-4 flex flex-col gap-[58px]"
           style={{ backgroundColor: "rgba(0,0,0,0.4)" }}
         >
           {/* Prompt preview text */}
