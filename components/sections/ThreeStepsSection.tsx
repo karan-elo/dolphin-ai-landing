@@ -8,6 +8,9 @@ const CARD_1_IMAGES = [
   { src: THREE_STEPS_IMAGES.card1[3], alt: "Video template preview 4", top: 135, left: 152, w: 128, h: 148 },
   { src: THREE_STEPS_IMAGES.card1[4], alt: "Video template preview 5", top: 35, left: 286, w: 128, h: 148 },
   { src: THREE_STEPS_IMAGES.card1[5], alt: "Video template preview 6", top: 191, left: 286, w: 128, h: 148 },
+  { src: THREE_STEPS_IMAGES.card1[3], alt: "Video template preview 7", top: -120, left: 286, w: 128, h: 148 },
+  { src: THREE_STEPS_IMAGES.card1[4], alt: "Video template preview 8", top: 291, left: 152, w: 128, h: 148 },
+  { src: THREE_STEPS_IMAGES.card1[5], alt: "Video template preview 9", top: -105, left: 19, w: 128, h: 148 },
 ];
 
 export default function ThreeStepsSection() {
@@ -113,7 +116,7 @@ export default function ThreeStepsSection() {
               style={{ backgroundColor: "rgba(0,0,0,0.2)" }}
             >
               {/* Character image */}
-              <div className="relative h-[274px] w-[400px] overflow-hidden rounded-lg" style={{ backgroundColor: "#171717" }}>
+              <div className="relative h-[274px] w-[384px] mx-auto overflow-hidden rounded-lg" style={{ backgroundColor: "#171717" }}>
                 <img
                   src={THREE_STEPS_IMAGES.card2}
                   alt="AI character for video generation"
@@ -131,7 +134,7 @@ export default function ThreeStepsSection() {
                 {/* Caption overlay */}
                 <div
                   className="absolute bottom-2 left-1/2 -translate-x-1/2 w-[368px] rounded-[8px] p-4 overflow-hidden flex items-start"
-                  style={{ backgroundColor: "rgba(0,0,0,0.1)" }}
+                  style={{ backgroundColor: "rgba(0,0,0,0.4)" }}
                 >
                   <p
                     className="text-[#fafafa] text-[12px] font-normal leading-[16px] whitespace-nowrap overflow-hidden text-ellipsis"
@@ -183,7 +186,7 @@ export default function ThreeStepsSection() {
               <VideoBox
                 src={VIDEOS.threeSteps.card3}
                 aria-label="Generated video result preview"
-                className="w-[400px] h-[274px]"
+                className="w-[384px] h-[274px] mx-auto"
                 rounded="rounded-lg"
               />
 
